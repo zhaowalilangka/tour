@@ -1,7 +1,6 @@
 package word
 
 import (
-	"fmt"
 	"strings"
 	"unicode"
 )
@@ -38,8 +37,4 @@ func CamelCaseToUnderscore(s string) string {
 		output = append(output, unicode.ToLower(r))
 	}
 	return string(output)
-}
-
-func init() {
-	fmt.Println("---", "word fun init")
 }

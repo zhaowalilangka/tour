@@ -1,7 +1,6 @@
 package cmd
 
 import (
-	"fmt"
 	"log"
 	"strings"
 
@@ -54,8 +53,6 @@ var desc = strings.Join([]string{
 }, "\n")
 
 func init() {
-	fmt.Println("----", "wordcmd init add wordcmd")
-
 	wordCmd.Flags().StringVarP(&str, "str", "s", "", "请输入单词内容")
 	wordCmd.Flags().Int8VarP(&mode, "mode", "m", 0, "请输入单词转换模式")
 }
